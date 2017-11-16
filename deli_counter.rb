@@ -16,3 +16,8 @@ def take_a_number(line, name)
   line.push(name)
   puts "Welcome, #{name}. You are number #{line.count} in line."
 end
+
+def now_serving
+  if line.count == 0
+    puts "Line empty"
+end
