@@ -18,10 +18,10 @@ def take_a_number(line, name)
 end
 
 def now_serving(line)
-  if line.count == 0
-    puts "There is nobody waiting to be served!"
-  else
+  if line.count > 0
     first = line.unshift
-    puts "Now serving #{first}."
+    puts "Currently serving #{first}."
+  else
+    puts "There is nobody waiting to be served!"
   end
 end
