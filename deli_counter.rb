@@ -19,6 +19,9 @@ end
 
 def now_serving(line)
   if line.count == 0
-    puts "Line empty"
+    puts "There is nobody waiting to be served!"
+  else
+    first = line.unshift
+    puts "Now serving #{first}."
   end
 end
