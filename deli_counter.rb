@@ -5,5 +5,7 @@ def line(line)
   else
     line.each_with_index do |name, num|
       str += " #{num}. #{name}"
+    end
+    puts str
   end
 end
