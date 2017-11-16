@@ -1,7 +1,9 @@
 def line(line)
-  if line.count > 0
-    puts "people in line #{line.count}"
+  str = "The line is currently: "
+  if line.count == 0
+    puts "The line is currently empty."
   else
-    puts "no body"  
+    line.each_with_index do |name, num|
+      str += " #{num}. #{name}"
   end
 end
