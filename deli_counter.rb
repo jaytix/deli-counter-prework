@@ -3,4 +3,5 @@ def line(line)
     puts "people in line #{line.count}"
   else
     puts "no body"  
+  end
 end
