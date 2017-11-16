@@ -20,4 +20,5 @@ end
 def now_serving
   if line.count == 0
     puts "Line empty"
+  end
 end
