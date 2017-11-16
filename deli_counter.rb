@@ -19,7 +19,7 @@ end
 
 def now_serving(line)
   if line.count > 0
-    first = line.unshift
+    first = line.shift
     puts "Currently serving #{first}."
   else
     puts "There is nobody waiting to be served!"
